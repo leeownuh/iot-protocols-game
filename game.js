@@ -66,7 +66,7 @@ function renderGrid() {
   const grid = document.getElementById("grid");
   grid.innerHTML = "";
   currentGrid = JSON.parse(JSON.stringify(levels[level].grid));
-  document.getElementById("level-number").textContent = level;
+  document.getElementById("level-number").textContent =  "Level: " + level;
 
   // 🆕 Set the system type heading
   document.getElementById("system-type-heading").textContent =
